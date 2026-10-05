@@ -1,0 +1,8 @@
+'use client';
+import Link from 'next/link';import {ArrowRight,Check} from 'lucide-react';import PublicNav from '@/components/PublicNav';
+const plans=[
+  {name:'Free',price:'$0',suffix:'/ forever',desc:'Start with the essentials.',items:['1 business number','Customer CRM','Limited texting','English ↔ Spanish translation','Free-plan ads'],featured:false},
+  {name:'Business',price:'$19.99',suffix:'/ month',desc:'For businesses using ONE every day.',items:['No ads','Full CRM','Higher messaging allowance','AI reply drafts + grammar','Invoices + payment links','Automatic invoice reminders'],featured:true},
+  {name:'AI Pro',price:'Coming',suffix:'',desc:'Advanced intelligence after the core launch.',items:['AI receptionist','Conversation summaries','Smart follow-ups','Team tools','Advanced automations'],featured:false},
+];
+export default function Pricing(){return <div className="one-public"><PublicNav/><main className="one-subpage"><section className="one-subhero"><span className="one-kicker">PRICING</span><h1>Simple pricing.</h1><p>Start free. Upgrade when the extra usage and business tools save you time.</p></section><section className="one-pricing-page-grid">{plans.map(p=><article key={p.name} className={'one-price-page-card '+(p.featured?'featured':'')}><small>{p.name.toUpperCase()}</small><h2>{p.price}<span>{p.suffix}</span></h2><p>{p.desc}</p><div>{p.items.map(i=><span key={i}><Check size={14}/>{i}</span>)}</div><Link href="/signup" className="one-btn one-btn-primary">{p.name==='AI Pro'?'Join waitlist':'Start free'} <ArrowRight size={15}/></Link></article>)}</section></main></div>}

@@ -1,0 +1,33 @@
+{
+  "name": "seaint-one-crm",
+  "version": "2.3.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@supabase/ssr": "0.5.2",
+    "@supabase/supabase-js": "2.49.1",
+    "framer-motion": "12.23.12",
+    "lucide-react": "0.468.0",
+    "next": "15.5.25",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
+    "stripe": "17.5.0",
+    "tweetnacl": "1.0.3",
+    "motion-dom": "12.40.0",
+    "motion-utils": "12.23.6"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.5",
+    "@types/react": "19.0.3",
+    "@types/react-dom": "19.0.2",
+    "typescript": "5.7.2"
+  },
+  "overrides": {
+    "motion-dom": "12.40.0",
+    "motion-utils": "12.23.6"
+  }
+}

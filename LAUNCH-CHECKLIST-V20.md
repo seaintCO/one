@@ -1,0 +1,29 @@
+# ONE V20 Launch Checklist
+
+- [ ] `.env.local` populated for local testing
+- [ ] `npm install` succeeds
+- [ ] `npm run build` succeeds
+- [ ] Supabase Auth signup/login works
+- [ ] Business creation works
+- [ ] Telnyx live number search works
+- [ ] Telnyx provisioning works
+- [ ] Telnyx inbound webhook verified
+- [ ] Real inbound SMS appears in correct tenant inbox
+- [ ] Real outbound SMS sends from assigned number
+- [ ] STOP/START behavior verified
+- [ ] Translation provider configured/tested
+- [ ] Stripe Connect onboarding works
+- [ ] Invoice payment link works
+- [ ] Stripe webhook marks correct invoice paid
+- [ ] Stripe invoice checkout does NOT alter ONE subscription plan
+- [ ] Manual external payment flow implemented/tested
+- [ ] Cross-tenant isolation tested with two accounts
+- [ ] Vercel Production env vars added
+- [ ] Supabase production redirect URLs added
+- [ ] Telnyx production webhook configured
+- [ ] Stripe production webhook configured
+- [ ] `/api/health` returns ready state
+- [ ] Mobile inbox UX tested
+- [ ] EN/ES tested
+- [ ] Light/dark tested
+- [ ] Private beta passes before broad public launch
